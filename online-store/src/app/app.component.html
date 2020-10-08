@@ -16,7 +16,7 @@
 </div>
 
 <div class="content" role="main">
-  <alert class=" pull-right" type="info" [dismissOnTimeout]="3000" (onClosed)="dataService.alert.show = false" *ngIf="dataService.alert.show">
+  <alert class=" pull-right" type="info" [dismissOnTimeout]="2000" (onClosed)="dataService.alert.show = false" *ngIf="dataService.alert.show">
     <strong>{{dataService.alert.message}}</strong>
   </alert>
   <router-outlet></router-outlet>

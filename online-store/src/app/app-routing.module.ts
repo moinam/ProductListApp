@@ -1,11 +1,13 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
-import { AboutMeComponent } from "./about-me/about-me.component";
+import { UserComponent } from "./user/user.component";
+import { CheckoutComponent } from "./checkout/checkout.component";
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
-  { path: "about", component: AboutMeComponent },
+  { path: "checkout", component: CheckoutComponent },
+  { path: "user", component: UserComponent },
   {
     path: "products",
     loadChildren: () =>

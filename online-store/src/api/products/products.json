@@ -6,7 +6,7 @@
     "releaseDate": "March 19, 2016",
     "descrip": "Leaf rake with 48-inch wooden handle.",
     "price": 19.95,
-    "rating": 3.2,
+    "rating": 3,
     "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
   },
   {
@@ -15,8 +15,8 @@
     "code": "GDN-0023",
     "releaseDate": "March 18, 2016",
     "descrip": "15 gallon capacity rolling garden cart",
-    "price": 32.99,
-    "rating": 4.2,
+    "price": 320.99,
+    "rating": 4,
     "imageUrl": "https://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
   },
   {
@@ -25,8 +25,8 @@
     "code": "TBX-0048",
     "releaseDate": "May 21, 2016",
     "descrip": "Curved claw steel hammer",
-    "price": 8.9,
-    "rating": 4.8,
+    "price": 80.9,
+    "rating": 4,
     "imageUrl": "https://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
   },
   {
@@ -35,8 +35,8 @@
     "code": "TBX-0022",
     "releaseDate": "May 15, 2016",
     "descrip": "15-inch steel blade hand saw",
-    "price": 11.55,
-    "rating": 3.7,
+    "price": 110.55,
+    "rating": 3,
     "imageUrl": "https://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
   },
   {
@@ -45,8 +45,8 @@
     "code": "GMG-0042",
     "releaseDate": "October 15, 2015",
     "descrip": "Standard two-button video game controller",
-    "price": 35.95,
-    "rating": 4.6,
+    "price": 3500.95,
+    "rating": 5,
     "imageUrl": "https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
   }
 ]

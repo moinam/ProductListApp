@@ -1,0 +1,56 @@
+<div class='card' style="width:600px">
+  <div class='card-header'>
+    Checkout
+  </div>
+  <div class='card-body'>
+    <div class='table-responsive'>
+      <table class='table' *ngIf='products && products.length'>
+        <thead>
+          <tr>
+            <th style="text-align: center;">Image</th>
+            <th style="text-align: center;">Product</th>
+            <th style="text-align: center;">Code</th>
+            <th style="text-align: center;">Price</th>
+            <th style="text-align: center;">Action</th>
+          </tr>
+        </thead>
+        <tbody style="text-align: center;">
+          <tr *ngFor='let product of products, index as i'>
+            <td>
+              <img [src]='product.imageUrl' [title]='product.name' [style.width.px]='imageWidth'
+                [style.margin.px]='imageMargin'>
+            </td>
+            <td style="padding-top: 40px;">
+              {{ product.name }}
+            </td>
+            <td style="padding-top: 40px;">{{ product.code | lowercase}}</td>
+            <td style="padding-top: 40px;">{{ product.price | currency:'INR':'symbol':'1.2-2' }}</td>
+            <td style="padding-top: 37px;">
+              <span class="btn noborder btnicon" id="btnRemoveE" (click)="removeKey(i, product)">
+                <i tooltip="Remove Item from cart" placement="right" class="fa fa-minus" style="color: teal;"></i>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="col-md-6" style="padding-top: 10px;">
+        <label>Total Amount to be paid: </label>
+      </div>
+      <div class="col-md-3" style="padding-top: 10px;">
+        <p>{{ totalPrice | currency:'INR':'symbol':'1.2-2' }}</p>
+      </div>
+      <div class="col-md-3 pull-right">
+        <a class="button fancy-button" style="text-decoration: none;" (click)="showAlert()"><i
+            class="material-icons">shopping_cart</i>Checkout</a>
+      </div>
+      <div *ngIf='products.length == 0' class='alert alert-danger col-md-12'>
+        <span>No items selected</span>
+      </div>
+      <div>
+        <alert type="success" [dismissOnTimeout]="2000" (onClosed)="alert.show = false"
+          *ngIf="alert.show && products.length > 0">
+          <strong>{{alert.message}}</strong>
+        </alert>
+      </div>
+    </div>
+  </div>
